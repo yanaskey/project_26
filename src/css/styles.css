@@ -4,21 +4,31 @@
   | default @import url()
   |============================
 */
+
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./modals.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/* ------------Main------------ */
+@import url(./main/hero-main.css);
+@import url(./main/about-rest-main.css);
+@import url(./main/details-rest-main.css);
+@import url(./main/about-hotel-main.css);
+@import url(./main/details-hotel-main.css);
+@import url(./main/contacts-main.css);
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+/* ------------Restaurant------------ */
+@import url(./restaurant/hero-rest.css);
+@import url(./restaurant/about-kitchen-rest.css);
+@import url(./restaurant/menu-rest.css);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/* ------------Hotel------------ */
+@import url(./hotel/hero-hotel.css);
+@import url(./hotel/luxe-hotel.css);
+@import url(./hotel/for3-hotel.css);
+@import url(./hotel/for2-hotel.css);
+
+/* ------------Room------------ */
+@import url(./room/hero-room.css);
+@import url(./room/amenities-room.css);
