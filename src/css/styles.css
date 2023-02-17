@@ -12,7 +12,7 @@
 
 /* ------------Main------------ */
 @import url(./main/hero-main.css);
-@import url(./main/about-rest-main.css);
+@import url(./main/about-complex-main.css);
 @import url(./main/details-rest-main.css);
 @import url(./main/about-hotel-main.css);
 @import url(./main/details-hotel-main.css);
@@ -27,7 +27,7 @@
 @import url(./hotel/hero-hotel.css);
 @import url(./hotel/luxe-hotel.css);
 @import url(./hotel/for3-hotel.css);
-@import url(./hotel/for2-hotel.css);
+@import url(./hotel/for4-hotel.css);
 
 /* ------------Room------------ */
 @import url(./room/hero-room.css);
