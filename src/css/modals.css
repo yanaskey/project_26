@@ -1,0 +1,158 @@
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 335px;
+  /* height: 528px; */
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 24px 24px 40px;
+  border-radius: 2px;
+  background-color: var(--black-text-color, #121212);
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal-btn-close {
+  background-color: transparent;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  /* fill: var(--white-text-color, #f7f7f7); */
+  cursor: pointer;
+}
+
+/* .modal__cross_2 {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  fill: var(--white-text-color, #f7f7f7);
+  cursor: pointer;
+} */
+
+.modal-btn {
+  background-color: transparent;
+}
+
+.modal-btn-icon {
+  /* fill: var(--white-text-color, #f7f7f7); */
+  stroke: var(--white-text-color, #f7f7f7);
+  stroke-width: 1.5px;
+  /* border: 1.5px solid #f7f7f7; */
+  /* fill: var(--white-text-color, #f7f7f7); */
+}
+
+/* ------------ FORM -------------- */
+
+.modal-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.36;
+  color: var(--white-text-color, #f7f7f7);
+}
+.form-input-wrap {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-input-wrap label {
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  color: #d8d7d7;
+  margin-top: 8px;
+  text-align: left;
+  display: block;
+}
+
+.modal-input {
+  border: none;
+  width: 100%;
+  height: 36px;
+  border-bottom: 1px solid rgba(246, 246, 246, 0.2);
+  padding: 0;
+  outline: none;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color, #f7f7f7);
+  background-color: transparent;
+}
+.modal-input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white-text-color, #f7f7f7);
+}
+
+option[value=''] {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--white-text-color, #f7f7f7);
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 32px 32px 60;
+    max-width: 628px;
+    height: 628px;
+  }
+}
