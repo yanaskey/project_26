@@ -25,6 +25,7 @@
   /*  Установаем ширину окна  */
   width: 100%;
   max-width: 335px;
+
   /* height: 528px; */
 
   /*  Центрируем и задаем z-index */
@@ -36,7 +37,7 @@
 
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-
+  text-transform: uppercase;
   padding: 24px 24px 40px;
   border-radius: 2px;
   background-color: var(--black-text-color, #121212);
@@ -65,26 +66,9 @@
   cursor: pointer;
 }
 
-/* .modal__cross_2 {
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  fill: var(--white-text-color, #f7f7f7);
-  cursor: pointer;
-} */
-
-.modal-btn {
-  background-color: transparent;
-}
-
 .modal-btn-icon {
-  /* fill: var(--white-text-color, #f7f7f7); */
   stroke: var(--white-text-color, #f7f7f7);
-  stroke-width: 1.5px;
-  /* border: 1.5px solid #f7f7f7; */
-  /* fill: var(--white-text-color, #f7f7f7); */
+  /* stroke-width: 1.5px; */
 }
 
 /* ------------ FORM -------------- */
@@ -139,18 +123,19 @@ input[class='modal-input']:invalid {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   opacity: 1;
   color: var(--white-text-color, #f7f7f7);
 }
 
 .modal-select {
+  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  appearance: none;
+
   background-color: transparent;
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
-    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-image: url('./img/symbols.svg#icon-cross'),
+    linear-gradient(to bottom, #fff 0%, #fff 100%);
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -168,13 +153,18 @@ option[value=''] {
   /* color: var(--white-text-color, #f7f7f7); */
 }
 
+select > option {
+  background-color: transparent;
+}
 .modal-btn {
+  text-align: center;
+  margin: 0 auto;
   padding: 14px 48px;
   border: 0.8px solid #f7f7f7;
   border-radius: 32px;
   font-size: 14px;
   line-height: 1.29;
-  text-transform: uppercase;
+  background-color: transparent;
   color: var(--white-text-color, #f7f7f7);
 }
 
@@ -184,4 +174,47 @@ option[value=''] {
     max-width: 628px;
     height: 628px;
   }
+}
+
+/* ------------ MODAL 2------------ */
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  /* border: 1px solid #6c7231;
+  border-radius: 3px; */
+}
+
+.select-wrapper:hover {
+  box-shadow: 0px 0px 3px gray;
+}
+
+.select-wrapper select {
+  /* width: 300px;
+  height: 28px;
+  padding: 0 20px 0 7px;
+  background: transparent;
+  border: 0; */
+  appearance: none; /* remove arrow        */
+  -webkit-appearance: none; /* remove arrow Chrome */
+  -moz-appearance: none; /* remove arrow FF     */
+}
+.select-wrapper select::-ms-expand {
+  display: none; /* remove arrow IE     */
+}
+
+.select-arrow-3 {
+  position: absolute;
+  z-index: -9999;
+  border: 8px solid transparent;
+  border-bottom: 0;
+  right: 6px;
+}
+.select-arrow-3:nth-child(1) {
+  top: 11px;
+  border-top-color: #6c7231;
+}
+.select-arrow-3:nth-child(2) {
+  top: 8px;
+  border-top-color: #fff;
 }

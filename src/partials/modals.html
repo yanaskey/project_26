@@ -40,7 +40,7 @@
         </select>
       </li>
       <li>
-        <select name="date" id="date1" class="modal-input modal_select">
+        <select name="date" id="date1" class="modal-input modal-select">
           <option value="" disabled selected hidden>Select your age</option>
           <option>1</option>
           <option>2</option>
@@ -72,29 +72,35 @@
 <!-- Modal window 2 -->
 <div class="modal" data-modal="2">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 2</p>
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-btn-icon" width="14" height="14">
+      <use href="./img/symbols.svg#icon-cross"></use>
+    </svg>
+  </button>
+
+  <p class="modal-title">Заголовок окна 2</p>
+  <form>
+    <div class="select-wrapper">
+      <div class="select-arrow-3"></div>
+      <!-- <div class="select-arrow-3"></div> -->
+      <select class="modal-input">
+        <option value="" disabled selected hidden>Select your age</option>
+        <option>Test</option>
+        <option>Test</option>
+        <option>Test</option>
+      </select>
+    </div>
+  </form>
 </div>
 
 <!-- Modal window 3 -->
 <div class="modal" data-modal="3">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 3</p>
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-btn-icon" width="14" height="14">
+      <use href="./img/symbols.svg#icon-cross"></use>
+    </svg>
+  </button>
+
+  <p class="modal-title">Заголовок окна 3</p>
 </div>
