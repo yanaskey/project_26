@@ -6,26 +6,33 @@
 <div class="modal" data-modal="1">
   <button type="button" class="modal-btn-close js-modal-close">
     <svg class="modal-btn-icon" width="14" height="14">
-      <use href="./img/icons.svg#icon-x"></use>
+      <use href="./img/symbols.svg#icon-cross"></use>
     </svg>
   </button>
-  <form class="modal-form">
+  <form class="modal-form" name="form-modal1">
     <p class="modal-title">BOOK <em>A TABLE</em></p>
     <ul class="form-input-wrap">
       <li>
         <input
           type="text"
           name="name"
-          id="name"
+          id="name1"
+          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,}"
           placeholder="Your name"
           class="modal-input"
+          required
         />
-        <label for="name">Who should book a table for?</label>
+        <label for="name1">Who should book a table for?</label>
       </li>
 
       <li>
-        <select name="number" id="number" class="modal-input">
-          <option value="" disabled selected hidden>number of people</option>
+        <select
+          name="number"
+          id="number1"
+          class="modal-input modal_select"
+          title="Number of people"
+        >
+          <option value="" disabled selected hidden>Number of people</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -33,24 +40,27 @@
         </select>
       </li>
       <li>
-        <select name="date" id="date" class="modal-input">
-          <option value="" disabled selected hidden>Select Your Age</option>
+        <select name="date" id="date1" class="modal-input modal_select">
+          <option value="" disabled selected hidden>Select your age</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
         </select>
-        <label for="date">What date to book?</label>
+        <label for="date1">What date to book?</label>
       </li>
       <li>
         <input
           type="tel"
           name="phone"
-          id="phone"
+          id="phone1"
           class="modal-input"
           placeholder="+38()"
+          pattern="^\+38+[\(]\d{3}[\)]\d{7,}"
+          title="Include +38("
+          required
         />
-        <label for="phone">Phone number</label>
+        <label for="phone1">Phone number</label>
       </li>
     </ul>
     <button type="submit" class="modal-btn js-modal-close">
