@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/project_26/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimino</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    
+    <script type="module" crossorigin src="/project_26/assets/styles-fac82e35.js"></script>
+    <link rel="stylesheet" href="/project_26/assets/styles-1e1a6b5d.css">
+  </head>
+  <body>
+    
+
+    <main>
+      
+      
+    </main>
+
+    <footer>
+  <div class="container footer-container">
+    <nav class="footer-nav">
+      <ul class="footer-list">
+        <li>
+          <a href="./index.html" class="footer-nav-link">Home</a>
+        </li>
+        <li>
+          <a href="./hotel.html" class="footer-nav-link">Hotel</a>
+        </li>
+        <li>
+          <a href="./restaurant.html" class="footer-nav-link">Restaurant</a>
+        </li>
+      </ul>
+      <div class="footer-nav-logo">
+        <a href="./index.html" target="_blank" class="logo footer-logo link"
+          >Mimino</a
+        >
+        <p class="logo-text">restaurant-hotel complex</p>
+      </div>
+    </nav>
+    <ul class="footer-social">
+      <li class="footer-social-list">
+        <a
+          href=""
+          class="footer-social-link link"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/project_26/assets/symbols-add31013.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-list">
+        <a
+          href=""
+          class="footer-social-link link"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/project_26/assets/symbols-add31013.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer-social-list">
+        <a
+          href=""
+          class="footer-social-link link"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <svg class="footer-social-icon" width="24" height="24">
+            <use href="/project_26/assets/symbols-add31013.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+    <div>
+      <!-- Modal windows -->
+<!-- Overlay for Modal windows -->
+<div class="overlay js-overlay-modal"></div>
+
+<!-- Modal window 1 -->
+<div class="modal" data-modal="1">
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-btn-icon" width="14" height="14">
+      <use href="/project_26/assets/icons-3a93a3b2.svg#icon-x"></use>
+    </svg>
+  </button>
+  <form class="modal-form">
+    <p class="modal-title">BOOK <em>A TABLE</em></p>
+    <ul class="form-input-wrap">
+      <li>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your name"
+          class="modal-input"
+        />
+        <label for="name">Who should book a table for?</label>
+      </li>
+
+      <li>
+        <select name="number" id="number" class="modal-input">
+          <option value="" disabled selected hidden>number of people</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+      </li>
+      <li>
+        <select name="date" id="date" class="modal-input">
+          <option value="" disabled selected hidden>Select Your Age</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <label for="date">What date to book?</label>
+      </li>
+      <li>
+        <input type="tel" name="phone" id="phone" class="modal-input" />
+        <label for="phone">Phone</label>
+      </li>
+    </ul>
+    <button type="submit" class="modal-btn js-modal-close">
+      Make a reservation
+    </button>
+  </form>
+</div>
+
+<!-- Modal window 2 -->
+<div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Заголовок окна 2</p>
+</div>
+
+<!-- Modal window 3 -->
+<div class="modal" data-modal="3">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
+  <p class="modal__title">Заголовок окна 3</p>
+</div>
+
+    </div>
+
+    
+    <script src="/modals.js"></script>
+    <script src="/mob-tablet-menu.js"></script>
+  </body>
+</html>
