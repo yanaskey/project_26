@@ -1,0 +1,132 @@
+.section-main-rest {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+}
+
+.section-title-rest {
+  font-weight: 500;
+  color: var(--black-text-color);
+  margin-bottom: 24px;
+}
+.main-rest-subtitle-text {
+  width: 221px;
+  height: 54px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--black-text-color);
+  margin-bottom: 32px;
+}
+
+.main-img-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.main-img-list-desc {
+  display: flex;
+  gap: 32px;
+  /* margin-bottom: 18px; */
+}
+.main-img-item-desc {
+  margin-bottom: 0;
+  width: 266px;
+  height: 309px;
+}
+.main-img-rest-desc-lg {
+}
+
+.main-icon-list {
+  display: flex;
+  /* gap: 20px; */
+  margin-bottom: 40px;
+}
+.main-icon-btn {
+  fill: #484848;
+  border: none;
+  background-color: #f7f7f7;
+  padding: 0;
+}
+.main-btn-list {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-btn-rest {
+  width: 135px;
+  height: 34px;
+  padding: 8px 18px;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .main-rest {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .section-title-rest {
+    margin-bottom: 0;
+  }
+  .main-rest-subtitle-text {
+    margin-bottom: 0;
+  }
+
+  .main-btn-list {
+    gap: 14px;
+  }
+  .main-btn-rest {
+    padding: 8px 24px;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .main-img-list-desc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-img-list {
+    margin-bottom: 51px;
+    display: none;
+  }
+  .main-btn-list {
+    position: absolute;
+    /* right: 100px; */
+    left: 1047px;
+    top: 65px;
+    left: 1047px;
+    gap: 14px;
+  }
+  .main-btn-rest {
+    padding: 9px 24px;
+    width: 167px;
+    height: 42px;
+  }
+  .main-rest {
+    margin-bottom: 125px;
+  }
+
+  .main-icon-list {
+    justify-content: center;
+  }
+}
