@@ -8,7 +8,7 @@
 
   @media screen and (min-width:320px) {
     .hero{
-        background-color: #121212;
+        background-color: var(--black-text-color);
         margin: 0 auto;
         padding-bottom: 40px;
     }
@@ -16,9 +16,7 @@
       font-weight: 400;
         font-size: 80px;
         line-height: 1;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: #F7F7F7;
+        color: var(--white-text-color);
         margin-bottom: 24px;
     }
     .hero-img{
@@ -28,8 +26,7 @@
         font-size: 14px;
         line-height: 1.28;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #F7F7F7;
+        color: var(--white-text-color);
          
   }
   .hero-text-list{
@@ -41,9 +38,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 1.28;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: #F7F7F7;
+        color: var(--white-text-color);
         border: 0.8px solid #F7F7F7;
         border-radius: 32px;
         background-color: transparent;
