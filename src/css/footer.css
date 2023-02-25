@@ -20,26 +20,19 @@
 }
 
 .logo-footer {
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24px / 20px);
   letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #121212;
-  text-decoration: none;
+  color: var(--black-text-color);
 }
 
 .logo-text-footer {
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 8px;
   line-height: calc(10px / 8px);
   letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #121212;
+  color: var(--black-text-color);
   margin-top: 3px;
 }
 .footer-social {
@@ -96,6 +89,11 @@
     list-style: none;
     margin-right: 370px;
     gap: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18px / 14px);
+    letter-spacing: 0.05em;
+    color: var(--black-text-color);
   }
   .line {
     padding-top: 80px;
