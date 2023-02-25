@@ -17,15 +17,14 @@
 .footer-nav-logo {
   display: flex;
   flex-direction: column;
-  align-items: cente;
 }
 
 .logo-footer {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(22px / 14px);
+  font-size: 20px;
+  line-height: calc(24px / 20px);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #121212;
@@ -36,15 +35,27 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 6px;
-  line-height: calc (8px / 6px);
+  font-size: 8px;
+  line-height: calc(10px / 8px);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #121212;
+  margin-top: 3px;
 }
 .footer-social {
   display: flex;
   gap: 14px;
+}
+.line {
+  padding-top: 32px;
+}
+.hr {
+  border: none;
+  height: 1px;
+  background-color: #484848;
+  border: 0.5px solid rgba(18, 18, 18, 0.3);
+  border-radius: 68px;
+  margin: 0;
 }
 @media screen and (min-width: 375px) {
   .footer-list {
@@ -56,22 +67,15 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .footer-logo {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: calc(24px / 20px);
-  }
-  .logo-text-footer {
-    font-weight: 400;
-    font-size: 8px;
-    line-height: calc(10px / 8px);
-  }
   .footer-social {
     gap: 16px;
   }
   .footer-social-icon {
     width: 24px;
     height: 24px;
+  }
+  .line {
+    padding-top: 48px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -92,5 +96,11 @@
     list-style: none;
     margin-right: 370px;
     gap: 32px;
+  }
+  .line {
+    padding-top: 80px;
+  }
+  .footer-container {
+    padding-bottom: 80px;
   }
 }
