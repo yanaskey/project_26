@@ -1,27 +1,35 @@
-@media screen and (min-width:320px) {
+/* --------------------mobile------------------------- */
+
+@media screen and (min-width:320px){
+  .position{
+    position: relative;
+  }
+}
+
+  @media screen and (min-width:320px) {
     .hero{
-        background-color: var(--black-text-color);
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(/img/main/hero-main/main-hero-mobile.jpg.jpg);
-        background-repeat: no-repeat;
-        background-size: 335px 439px;
-        background-position: left 50% top 40px;
+        background-color: #121212;
         margin: 0 auto;
         padding-bottom: 40px;
     }
     .hero-title{
-        font-weight: 400;
+      font-weight: 400;
         font-size: 80px;
         line-height: 1;
-        color: var(--white-text-color);
-        padding-top: 389px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #F7F7F7;
         margin-bottom: 24px;
+    }
+    .hero-img{
+      padding: 40px 20px 362px 20px;
     }
     .hero-text{
         font-size: 14px;
         line-height: 1.28;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--white-text-color);
+        color: #F7F7F7;
          
   }
   .hero-text-list{
@@ -35,17 +43,27 @@
         line-height: 1.28;
         letter-spacing: -0.02em;
         text-transform: uppercase;
-        color: var(--white-text-color);
+        color: #F7F7F7;
         border: 0.8px solid #F7F7F7;
         border-radius: 32px;
         background-color: transparent;
         padding: 8px 18px;
        
     }
+    .hero-position{
+      position: absolute;
+      top:390px;
+      left: 20px;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
     .hero-wrap{
       display: flex;
       flex-direction: column;
       align-items: center;  
+      justify-content: center;
     }
     .hero-btn-list{
       display: flex;
@@ -59,31 +77,23 @@
     align-items: center;
 }
    }
-  
-  @media (min-device-pixel-ratio: 2) and (min-width: 375px),
-  (min-resolution: 192dpi) and (min-width: 375px),
-  (min-resolution: 2dppx) and (min-width: 375px) {
-  .hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
-      url(/img/main/hero-main/main-hero-mobile_2x.jpg.jpg);
-  }
-}
 
 
 
 /* --------------------tablet--------------------------- */
 
 @media screen and (min-width: 768px){
-  .hero{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(/img/main/hero-main/main-hero-tab.jpg.jpg);
-    background-size: 542px 710px ;
-    background-position: left 50% top 50px;
-  }
   .hero-title{
     font-size: 150px;
-    padding-top: 528PX;
-    
   }
+  .hero-img{
+   padding: 50px 70px 186px 70px;
+  }
+.hero-position{
+  top: 528px;
+  left: 32px;
+  right: 32px;
+}
   .hero-btn{
     padding: 8px 24px;
   }
@@ -95,36 +105,36 @@
     flex-direction: row;
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
-      url(/img/main/hero-main/main-hero-tab_2x.jpg.jpg);
-  }
-}
+
 
 
 /* -----------------desctop-------------------- */
 
 @media screen and (min-width:1440px){
+
   .hero{
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%), url(/img/main/hero-main/main-hero-desc.jpg.jpg);
-    background-size: 542px 770px ;
-    background-position: right 0px top 0px ;
-    max-width: 1440px;
-    
-  }
-  .hero-wrap{
-    display: block;
+    padding-bottom: 0px;
   }
   .hero-title{
-    padding-top: 274px;
     margin-bottom: 196px;
   }
   .desc-hero-wrap{
     display: flex;
     flex-direction: row-reverse;
+    width: 1330px;
+  }
+  .hero-img{
+    padding: 0px 0px 0px 898px;
+   }
+   .hero-img-2{
+    width: 542px;
+    height: 770px;
+   }
+   .hero-position{
+    top: 274px;
+    left: 32px;
+    right: 0px;
+    align-items: start;
   }
   .hero-btn{
     width: 200px;
@@ -134,13 +144,5 @@
   .hero-btn-list{
     margin-left: 255px;
     margin-bottom: 0;
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 1440px),
-  (min-resolution: 192dpi) and (min-width: 1440px),
-  (min-resolution: 2dppx) and (min-width: 1440px) {
-  .hero {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 70.73%, #121212 98.51%),
-      url(/img/main/hero-main/main-hero-desc_2x.jpg.jpg);
   }
 }
