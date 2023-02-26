@@ -10,8 +10,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 /* styles for MODAL WINDOW */
@@ -35,11 +34,10 @@
 
   /*  other style   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  /* text-transform: uppercase; */
   padding: 24px 24px 40px;
   border-radius: 2px;
   background-color: var(--black-text-color, #121212);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all var(--transition);
 }
 
 /* Styles for the Active Surface and Window Classes */
@@ -162,8 +160,7 @@ select > option {
   line-height: 1.29;
   background-color: transparent;
   color: var(--white-text-color, #f7f7f7);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .modal-btn:hover,
