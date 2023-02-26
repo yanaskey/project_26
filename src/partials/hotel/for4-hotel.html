@@ -1,40 +1,38 @@
 <section class="four-hotel">
   <div class="container">
     <div class="four-hotel-container">
-      <div class="four-hotel-item four-pic-one">
-        <div class="four-pic-wrap">
-          <picture>
-            <source
-              srcset="
-                ././img/hotel/for4-hotel/hotel-for4-img1-desk.jpg    1x,
-                ././img/hotel/for4-hotel/hotel-for4-img1-desk-2x.jpg 2x
-              "
-              media="(min-width: 1440px)"
-              type="image/jpeg"
-            />
-            <source
-              srcset="
-                ././img/hotel/for4-hotel/hotel-for4-img1-tab.jpg    1x,
-                ././img/hotel/for4-hotel/hotel-for4-img1-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-              type="image/jpeg"
-            />
-            <source
-              srcset="
-                ././img/hotel/for4-hotel/hotel-for4-img1-mob.jpg    1x,
-                ././img/hotel/for4-hotel/hotel-for4-img1-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-              type="image/jpeg"
-            />
-            <img
-              src="././img/hotel/for4-hotel/hotel-for4-img1-mob.jpg"
-              alt="kitchen"
-              loading="lazy"
-            />
-          </picture>
-        </div>
+      <div class="four-pic-wrap four-pic-one">
+        <picture>
+          <source
+            srcset="
+              ././img/hotel/for4-hotel/hotel-for4-img1-desk.jpg    1x,
+              ././img/hotel/for4-hotel/hotel-for4-img1-desk-2x.jpg 2x
+            "
+            media="(min-width: 1440px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ././img/hotel/for4-hotel/hotel-for4-img1-tab.jpg    1x,
+              ././img/hotel/for4-hotel/hotel-for4-img1-tab-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            type="image/jpeg"
+          />
+          <source
+            srcset="
+              ././img/hotel/for4-hotel/hotel-for4-img1-mob.jpg    1x,
+              ././img/hotel/for4-hotel/hotel-for4-img1-mob-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+            type="image/jpeg"
+          />
+          <img
+            src="././img/hotel/for4-hotel/hotel-for4-img1-mob.jpg"
+            alt="kitchen"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <ul class="four-hotel-img-list">
         <li class="four-hotel-item four-pic-two">
@@ -107,7 +105,7 @@
     </div>
     <div class="four-hotel-text-container">
       <div class="four-hotel-wrap">
-        <h3 class="four-hotel-title">four-seater room</h3>
+        <h2 class="four-hotel-title">four-seater room</h2>
         <p class="four-hotel-text">
           Our 4-person room is perfect for small groups, offering comfort and
           convenience with 4 comfortable beds, ample storage, flat-screen TV,
@@ -115,18 +113,20 @@
           and soundproof walls. Book now for a memorable stay.
         </p>
       </div>
-      <div class="four-hotel-button-wrap">
-        <a href="./room.html" class="four-hotel-button luxe-hotel-link"
-          >More details</a
-        >
-        <button
-          type="button"
-          class="four-hotel-button js-open-modal"
-          data-modal="3"
-        >
-          View prices
-        </button>
-      </div>
+      <ul class="four-hotel-button-list">
+        <li class="four-hotel-button-item">
+          <a href="./room.html" class="button black">More details</a>
+        </li>
+        <li class="four-hotel-button-item">
+          <button
+            type="button"
+            class="button black js-open-modal"
+            data-modal="3"
+          >
+            View prices
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
