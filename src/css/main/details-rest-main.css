@@ -52,11 +52,12 @@
   stroke: rgba(18, 18, 18, 0.3);
   width: 24px;
   height: 24px;
-
+  justify-content: center;
+  align-items: center;
   border: none;
   background-color: transparent;
 
-  padding: 0;
+  padding-top: 0;
 }
 .main-icon-btn:hover,
 .main-icon-btn:focus {
@@ -64,6 +65,10 @@
 }
 .main-icon-btn-r {
   stroke: var(--black-text-color);
+}
+.main-icon {
+  justify-content: center;
+  align-content: center;
 }
 .main-btn-list {
   display: flex;
@@ -114,8 +119,8 @@
     height: 36px;
   }
   .main-icon {
-    width: 36px;
-    height: 36px;
+    /* width: 36px;
+    height: 36px; */
   }
   .main-img-list {
     gap: 32px;
@@ -124,9 +129,6 @@
 
   .main-btn-list {
     gap: 14px;
-  }
-  .main-btn-rest {
-    /* padding: 8px 24px; */
   }
 }
 
@@ -170,7 +172,7 @@
     height: 36px;
   }
   .main-icon {
-    width: 36px;
-    height: 36px;
+    /* width: 36px;
+    height: 36px; */
   }
 }
