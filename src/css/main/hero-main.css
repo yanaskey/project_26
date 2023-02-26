@@ -118,6 +118,9 @@
   display: flex;
   flex-direction: row-reverse;
 }
+.hero-text-list{
+  width: 708px;
+}
 .button{
   /* width: 200px; */
   font-size: 18px;
