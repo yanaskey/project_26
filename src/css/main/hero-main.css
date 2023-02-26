@@ -31,7 +31,7 @@
       flex-direction: column;
       gap: 32px; 
 }
-  .button{
+  .hero-btn{
       border-color: var(--white-text-color);
       color: var(--white-text-color);
   }
@@ -77,7 +77,7 @@
   padding-top: 528PX;
   
 }
-.button{
+.hero-btn{
   padding: 8px 24px;
 }
 .hero-btn-list{
@@ -121,8 +121,7 @@
 .hero-text-list{
   width: 708px;
 }
-.button{
-  /* width: 200px; */
+.hero-btn{
   font-size: 18px;
   line-height: 1.33;
 }
