@@ -6,6 +6,8 @@
   background-color: #d8d8d8;
   border: 0.5px solid rgba(18, 18, 18, 0.3);
   border-radius: 68px;
+  border-bottom: 1px solid #484848;
+  width: 100vw;
 }
 .footer-container {
   display: flex;
@@ -42,14 +44,14 @@
 .line {
   padding-top: 32px;
 }
-.hr {
+/*.hr {
   border: none;
   height: 1px;
   background-color: #484848;
   border: 0.5px solid rgba(18, 18, 18, 0.3);
   border-radius: 68px;
   margin: 0;
-}
+}*/
 @media screen and (min-width: 375px) {
   .footer-list {
     display: none;
