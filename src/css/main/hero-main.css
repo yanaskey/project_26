@@ -31,10 +31,7 @@
       flex-direction: column;
       gap: 32px; 
 }
-  .hero-btn-main{
-      border-color: var(--white-text-color);
-      color: var(--white-text-color);
-  }
+
   .hero-wrap-main{
     display: flex;
     flex-direction: column;
@@ -77,9 +74,7 @@
   font-size: 150px;
   
 }
-.hero-btn-main{
-  padding: 8px 24px;
-}
+
 .hero-btn-list-main{
   gap: 14px;
   margin-bottom: 86px;
@@ -121,10 +116,7 @@
 .hero-text-list-main{
   width: 708px;
 }
-.hero-btn-main{
-  font-size: 18px;
-  line-height: 1.33;
-}
+
 .hero-btn-list-main{
   margin-left: 275px;
   margin-bottom: 0;
