@@ -1,0 +1,15 @@
+.amenities-section {
+    background-color:var(--primary-black);
+}
+
+.amenities-title {
+    color: var(--white-text-color);
+}
+
+.amenities-list {
+    list-style: inside;
+}
+
+.amenities-list-item {
+    color: var(--white-text-color);
+}
