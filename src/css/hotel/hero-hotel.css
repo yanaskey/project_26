@@ -85,6 +85,20 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 11px;
+    
+  }
+  .btn-slide{
+    margin-right: 32px;
+  }
+  .svg-hotel{
+    fill: none;
+    stroke: var(--black-text-color);
+  }
+  .svg-hotel-1{
+    fill: none;
+    stroke: rgba(18, 18, 18, 0.3);
+    ;
   }
  
   
