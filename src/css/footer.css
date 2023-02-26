@@ -1,13 +1,11 @@
 .footer-social-icon {
   fill: none;
   stroke: var(--primary-black);
+  width: 20px;
+  height: 20px;
 }
 .footer {
-  background-color: #d8d8d8;
-  border: 0.5px solid rgba(18, 18, 18, 0.3);
-  border-radius: 68px;
-  border-bottom: 1px solid #484848;
-  width: 100vw;
+  border-bottom: 1px solid #d8d8d8;
 }
 .footer-container {
   display: flex;
@@ -41,9 +39,12 @@
   display: flex;
   gap: 14px;
 }
-.line {
-  padding-top: 32px;
+.footer-list {
+  display: none;
 }
+/*.line {
+  padding-top: 32px;}*/
+
 /*.hr {
   border: none;
   height: 1px;
@@ -108,3 +109,7 @@
     padding-bottom: 80px;
   }
 }
+
+/*border-bottom: 1px solid #484848;*/
+width: 100vw;
+height: 1px;
