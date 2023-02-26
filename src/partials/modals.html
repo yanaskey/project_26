@@ -9,10 +9,10 @@
       <use href="./img/symbols.svg#icon-cross"></use>
     </svg>
   </button>
-  <form class="modal-form" name="form-modal1">
+  <form class="modal-form" name="form1">
     <p class="modal-title">BOOK <em>A TABLE</em></p>
-    <ul class="form-input-wrap">
-      <li>
+    <div class="form-input-wrap">
+      <label for="name1">
         <input
           type="text"
           name="name"
@@ -22,34 +22,36 @@
           class="modal-input"
           required
         />
-        <label for="name1">Who should book a table for?</label>
-      </li>
+        Who should book a table for?</label
+      >
 
-      <li>
+      <label for="number1">
         <select
           name="number"
           id="number1"
-          class="modal-input modal_select"
+          class="modal-input modal-select"
           title="Number of people"
         >
-          <option value="" disabled selected hidden>Number of people</option>
+          <option value="" selected>Number of people</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
+          <option>Other</option>
         </select>
-      </li>
-      <li>
+      </label>
+      <label for="date1">
         <select name="date" id="date1" class="modal-input modal-select">
-          <option value="" disabled selected hidden>Select your age</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+          <option selected>Today</option>
+          <option>Tomorrow</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+          <option>Other</option>
         </select>
-        <label for="date1">What date to book?</label>
-      </li>
-      <li>
+        What date to book?</label
+      >
+
+      <label for="phone1">
         <input
           type="tel"
           name="phone"
@@ -60,9 +62,9 @@
           title="Include +38("
           required
         />
-        <label for="phone1">Phone number</label>
-      </li>
-    </ul>
+        Phone number</label
+      >
+    </div>
     <button type="submit" class="modal-btn js-modal-close">
       Make a reservation
     </button>
@@ -71,25 +73,72 @@
 
 <!-- Modal window 2 -->
 <div class="modal" data-modal="2">
-  <!--   Svg иконка для закрытия окна  -->
+  <!--   Svg icon for window close   -->
   <button type="button" class="modal-btn-close js-modal-close">
     <svg class="modal-btn-icon" width="14" height="14">
       <use href="./img/symbols.svg#icon-cross"></use>
     </svg>
   </button>
+  <form name="form3">
+    <p class="modal-title">BOOK <em>A ROOM</em></p>
+    <div class="form-input-wrap">
+      <label for="name2">
+        <input
+          type="text"
+          name="name"
+          id="name2"
+          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,}"
+          placeholder="Your name"
+          class="modal-input"
+          required
+        />
+        Who should book a table for?</label
+      >
+      <label for="phone2">
+        <input
+          type="tel"
+          name="phone"
+          id="phone2"
+          class="modal-input"
+          placeholder="+38()"
+          pattern="^\+38+[\(]\d{3}[\)]\d{7,}"
+          title="Include +38("
+          required
+        />
+        Phone number</label
+      >
+      <label for="date-in-2">
+        <select name="date" id="date-in-2" class="modal-input modal-select">
+          <option selected>Today</option>
+          <option>21/03/2023</option>
+          <option>22/03/2023</option>
+          <option>23/03/2023</option>
+        </select>
+        Check-in date</label
+      >
+      <label for="date-out-2">
+        <select name="date" id="date-out-2" class="modal-input modal-select">
+          <option selected>25/04/2023</option>
+          <option>26/04/2023</option>
+          <option>27/04/2023</option>
+          <option>28/04/2023</option>
+        </select>
+        Check-out date</label
+      >
 
-  <p class="modal-title">Заголовок окна 2</p>
-  <form>
-    <div class="select-wrapper">
-      <div class="select-arrow-3"></div>
-      <!-- <div class="select-arrow-3"></div> -->
-      <select class="modal-input">
-        <option value="" disabled selected hidden>Select your age</option>
-        <option>Test</option>
-        <option>Test</option>
-        <option>Test</option>
-      </select>
+      <label for="number2">
+        <select name="date" id="number2" class="modal-input modal-select">
+          <option selected>DOUBLE SUITE</option>
+          <option>DOUBLE LUXURY ROOM</option>
+          <option>TRIPLE ROOM</option>
+          <option>FOUR-SEATER ROOM</option>
+        </select>
+        Number category</label
+      >
     </div>
+    <button type="submit" class="modal-btn js-modal-close">
+      Make a reservation
+    </button>
   </form>
 </div>
 
@@ -102,5 +151,47 @@
     </svg>
   </button>
 
-  <p class="modal-title">Заголовок окна 3</p>
+  <form name="form3">
+    <p class="modal-title">PRICES PER <em>ROOM</em></p>
+
+    <p class="modal-posttitle">Double suite</p>
+    <div class="form-input-wrap">
+      <label for="date3">
+        <select name="date" id="date3" class="modal-input modal-select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+        </select>
+        Number of nights</label
+      >
+
+      <label for="prise">
+        <input
+          type="text"
+          name="prise"
+          id="prise"
+          class="modal-input"
+          placeholder="1000"
+          pattern="[0-9]{4,}"
+          title="Prise per night"
+          required
+        />
+        UAH</label
+      >
+    </div>
+    <button type="submit" class="modal-btn js-modal-close">
+      Make a reservation
+    </button>
+  </form>
 </div>
