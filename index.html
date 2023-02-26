@@ -16,7 +16,7 @@
     />
     
     <script type="module" crossorigin src="/project_26/assets/styles-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project_26/assets/styles-ddfd5534.css">
+    <link rel="stylesheet" href="/project_26/assets/styles-5766c296.css">
   </head>
   <body>
     <header class="header-section">
@@ -397,27 +397,44 @@
       
       <section class="section-location">
   <div class="container">
+    <ul class="main-btn-list">
+      <li class="main-btn-item">
+        <button type="button" class="js-open-modal" data-modal="1">
+          Book a table
+        </button>
+      </li>
+      <li class="main-btn-item">
+        <button type="button" class="js-open-modal" data-modal="2">
+          Book a room
+        </button>
+      </li>
+      <li class="main-btn-item">
+        <button type="button" class="js-open-modal" data-modal="3">
+          Prise per room
+        </button>
+      </li>
+    </ul>
     <div class="header-img-wrap">
       <h2 class="location-header section-title">Location</h2>
       <picture>
         <source
           srcset="/project_26/assets/main-location-map-desk-dc1b49e4.jpg 1x, /project_26/assets/main-location-map-desk-2x-024cd22e.jpg 2x"
           media="(min-width: 1440px)"
-          sizes="(min-width: 1440px) 640px, 100vw"
           type="image/jpeg"
         />
+        <!-- sizes="(min-width: 1440px) 640px, 100vw" -->
         <source
           srcset="/project_26/assets/main-location-map-tab-6f47290e.jpg 1x, /project_26/assets/main-location-map-tab-2x-38404416.jpg 2x"
           media="(min-width: 768px)"
-          sizes="(min-width: 768px) 704px, 100vw"
           type="image/jpeg"
         />
+        <!-- sizes="(min-width: 768px) 704px, 100vw" -->
         <source
           srcset="/project_26/assets/main-location-map-mob-0759ac71.jpg 1x, /project_26/assets/main-location-map-mob-2x-90baa633.jpg 2x"
           media="(max-width: 767px)"
-          sizes="(max-width: 767px) 335px, 100vw"
           type="image/jpeg"
         />
+        <!-- sizes="(max-width: 767px) 335px, 100vw" -->
         <img
           src="/project_26/assets/main-location-map-mob-0759ac71.jpg"
           class="location-map-img"
@@ -527,47 +544,65 @@
 <div class="modal" data-modal="1">
   <button type="button" class="modal-btn-close js-modal-close">
     <svg class="modal-btn-icon" width="14" height="14">
-      <use href="/project_26/assets/icons-3a93a3b2.svg#icon-x"></use>
+      <use href="/project_26/assets/symbols-add31013.svg#icon-cross"></use>
     </svg>
   </button>
-  <form class="modal-form">
+  <form class="modal-form" name="form1">
     <p class="modal-title">BOOK <em>A TABLE</em></p>
-    <ul class="form-input-wrap">
-      <li>
+    <div class="form-input-wrap">
+      <label for="name1">
         <input
           type="text"
           name="name"
-          id="name"
+          id="name1"
+          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,}"
           placeholder="Your name"
           class="modal-input"
+          required
         />
-        <label for="name">Who should book a table for?</label>
-      </li>
+        Who should book a table for?</label
+      >
 
-      <li>
-        <select name="number" id="number" class="modal-input">
-          <option value="" disabled selected hidden>number of people</option>
+      <label for="number1">
+        <select
+          name="number"
+          id="number1"
+          class="modal-input modal-select"
+          title="Number of people"
+        >
+          <option value="" selected>Number of people</option>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
+          <option>Other</option>
         </select>
-      </li>
-      <li>
-        <select name="date" id="date" class="modal-input">
-          <option value="" disabled selected hidden>Select Your Age</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
+      </label>
+      <label for="date1">
+        <select name="date" id="date1" class="modal-input modal-select">
+          <option selected>Today</option>
+          <option>Tomorrow</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+          <option>Other</option>
         </select>
-        <label for="date">What date to book?</label>
-      </li>
-      <li>
-        <input type="tel" name="phone" id="phone" class="modal-input" />
-        <label for="phone">Phone</label>
-      </li>
-    </ul>
+        What date to book?</label
+      >
+
+      <label for="phone1">
+        <input
+          type="tel"
+          name="phone"
+          id="phone1"
+          class="modal-input"
+          placeholder="+38()"
+          pattern="^\+38+[0-9\s\-\(\)]{10,}"
+          title="Include +38"
+          required
+        />
+        Phone number</label
+      >
+    </div>
     <button type="submit" class="modal-btn js-modal-close">
       Make a reservation
     </button>
@@ -576,32 +611,127 @@
 
 <!-- Modal window 2 -->
 <div class="modal" data-modal="2">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 2</p>
+  <!--   Svg icon for window close   -->
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-btn-icon" width="14" height="14">
+      <use href="/project_26/assets/symbols-add31013.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <form name="form3">
+    <p class="modal-title">BOOK <em>A ROOM</em></p>
+    <div class="form-input-wrap">
+      <label for="name2">
+        <input
+          type="text"
+          name="name"
+          id="name2"
+          pattern="[A-Za-zА-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{2,}"
+          placeholder="Your name"
+          class="modal-input"
+          required
+        />
+        Who should book a table for?</label
+      >
+      <label for="phone2">
+        <input
+          type="tel"
+          name="phone"
+          id="phone2"
+          class="modal-input"
+          placeholder="+38()"
+          pattern="^\+38+[0-9\s\-\(\)]{10,}"
+          title="Include +38("
+          required
+        />
+        Phone number</label
+      >
+      <label for="date-in-2">
+        <select name="date" id="date-in-2" class="modal-input modal-select">
+          <option selected>Today</option>
+          <option>21/03/2023</option>
+          <option>22/03/2023</option>
+          <option>23/03/2023</option>
+        </select>
+        Check-in date</label
+      >
+      <label for="date-out-2">
+        <select name="date" id="date-out-2" class="modal-input modal-select">
+          <option selected>25/04/2023</option>
+          <option>26/04/2023</option>
+          <option>27/04/2023</option>
+          <option>28/04/2023</option>
+        </select>
+        Check-out date</label
+      >
+
+      <label for="category2">
+        <select name="date" id="category2" class="modal-input modal-select">
+          <option selected>DOUBLE SUITE</option>
+          <option>DOUBLE LUXURY ROOM</option>
+          <option>TRIPLE ROOM</option>
+          <option>FOUR-SEATER ROOM</option>
+        </select>
+        Number category</label
+      >
+    </div>
+    <button type="submit" class="modal-btn js-modal-close">
+      Make a reservation
+    </button>
+  </form>
 </div>
 
 <!-- Modal window 3 -->
 <div class="modal" data-modal="3">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 3</p>
+  <!--   Svg icon for window close   -->
+  <button type="button" class="modal-btn-close js-modal-close">
+    <svg class="modal-btn-icon" width="14" height="14">
+      <use href="/project_26/assets/symbols-add31013.svg#icon-cross"></use>
+    </svg>
+  </button>
+
+  <form name="form3">
+    <p class="modal-title">PRICES PER <em>ROOM</em></p>
+
+    <p class="modal-posttitle">Double suite</p>
+    <div class="form-input-wrap">
+      <label for="number3">
+        <select name="date" id="number3" class="modal-input modal-select">
+          <option selected>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+        </select>
+        Number of nights</label
+      >
+
+      <label for="prise">
+        <input
+          type="text"
+          name="prise"
+          id="prise"
+          class="modal-input"
+          value="1000"
+          pattern="[0-9]{4,}"
+          title="Prise per night"
+          required
+        />
+        UAH</label
+      >
+    </div>
+    <button type="submit" class="modal-btn js-modal-close">
+      Make a reservation
+    </button>
+  </form>
 </div>
 
     </div>
