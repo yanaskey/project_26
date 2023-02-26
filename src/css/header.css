@@ -47,6 +47,7 @@
 
 .menu-container {
   width: 100%;
+  height: 100%;
   padding-right: 20px;
   padding-left: 20px;
   margin-left: auto;
@@ -54,14 +55,42 @@
 }
 
 .close-btn {
+  position: absolute;
+  top: 32px;
+  left: 27px;
   border: none;
-  margin-right: 83px;
   padding: 0;
+}
+
+.menu-list-wrap {
+  /* width: 117px; */
+  margin-top: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-list li {
+  text-align: center;
+}
+
+
+.menu-list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-link {
+  color: var(--white-line-color);
 }
 
 .mobile-menu-icon {
   stroke: var(--primary-black);
   fill: none;
+}
+
+.header-menu-social {
+  display: flex;
 }
 
 .header-social {
@@ -89,7 +118,7 @@
   line-height: calc(22px / 14px);
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--black-text-color);
+  color: var(--white-line-color);
   text-decoration: none;
 }
 
@@ -99,10 +128,20 @@
   line-height: calc (8px / 6px);
   letter-spacing: 0.18em;
   margin-top: 3px;
-  color: var(--black-text-color);
+  color: var(--white-line-color);
 }
 
 .menu-header.header-nav {
+}
+
+.menu-container .menu-header {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 78px;
+  justify-content: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.3);;
 }
 
 @media screen and (max-width: 767px) {
@@ -112,10 +151,42 @@
   .header-social {
     display: none;
   }
+
+  .header-menu-mob-social {
+    display: flex;
+    position: absolute;
+    bottom: 25px;
+    left: 22px;
+  }
+
+  .header-mob-social {
+    display: flex;
+    gap: 14px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header-list {
     display: none;
+  }
+
+  .header-menu-mob-social {
+    display: none;
+  }
+
+  .menu-container .menu-header {
+    position: relative;
+    justify-content: right;
+  }
+
+  .header-nav-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  }
+
+  .header-menu-social {
+    display: flex;
+    margin-right: 33px;
   }
 
   .mobile-menu-btn {
@@ -136,6 +207,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+
   .mobile-menu-btn {
     display: none;
   }
