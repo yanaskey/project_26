@@ -24,7 +24,6 @@
   /*  Set window width  */
   width: 100%;
   max-width: 335px;
-
   /* height: 528px; */
 
   /*  Centering and setting the z-index*/
@@ -173,13 +172,12 @@ select > option {
   color: var(--black-text-color);
 }
 
-/* 
-@media (max-height: 500px) {
+@media screen and (max-height: 512px) {
   .modal {
+    max-height: 100%;
     overflow: scroll;
-    scroll-behavior: auto;
   }
-} */
+}
 
 @media screen and (min-width: 768px) {
   .modal {
