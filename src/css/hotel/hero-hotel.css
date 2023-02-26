@@ -63,6 +63,7 @@
     display: flex;
     transition: transform 0.5s ease;
     will-change: transform;
+    gap: 20px;
   }
   
   .itc-slider__transition-none {
@@ -136,7 +137,7 @@
     }
     .hero-text-hotel{
         position: absolute;
-        top: 450px;
+        top: 572px;
     }
     .desc-wrapper-hotel{
         margin-right: 369px;
