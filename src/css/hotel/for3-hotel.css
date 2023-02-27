@@ -40,6 +40,7 @@
 }
 .three-hotel-button-list {
   display: flex;
+  align-items: baseline;
   gap: 12px;
 }
 
@@ -122,7 +123,7 @@
     justify-content: space-between;
   }
   .three-hotel-text-container {
-    display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 
