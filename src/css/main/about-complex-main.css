@@ -14,3 +14,102 @@
   width: 32px;
   background-color: tomato;
 } */
+
+/* 
+.main-compl-bottom-2{
+  display: flex;
+} */
+
+/* ------верхня частина---- */
+
+.main-compl-top-part {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.main-compl-top-1-abs {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.first-review {
+  position: absolute;
+  top: -42px;
+  right: 0;
+}
+
+.text-part-complex .complex-text:not(nth-last-child()) {
+  margin-bottom: 14px;
+}
+.text-title-complex {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.18em;
+  color: #484848;
+  margin-bottom: 18px;
+}
+
+.complex-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--black-text-color);
+}
+
+/* ------нижня частина---- */
+
+.main-compl-bottom-1 {
+  position: relative;
+  margin-bottom: 54px;
+}
+
+.second-review {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+
+.main-compl-bottom-2 .text-part-complex {
+  margin-bottom: 40px;
+}
+
+/* -------- complex-review ---------- */
+/* start */
+
+.complex-review {
+  width: 212px;
+  height: 61px;
+  padding: 10px 14px;
+
+  background: var(--black-text-color);
+  box-shadow: 1px 7px 22px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-text-wrap p:nth-child(1) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--white-text-color);
+  text-transform: none;
+  margin-bottom: 7px;
+}
+
+.review-text-wrap p:nth-child(2) {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #575757;
+  text-transform: none;
+}
+
+.review-text-wrap span {
+  color: var(--white-text-color);
+}
+/* end */
+/* -------- complex-review ---------- */
