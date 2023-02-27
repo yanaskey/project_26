@@ -14,19 +14,22 @@
     margin-bottom: 36px;
 }
 /* Стилі для розділу з гарячими стравами */
-/*  {
-} */
+.restmenu-container {
+    margin-bottom: 40px;
+}
+.restmenu-menu {
+    padding: 0;
+}
 @media screen and (min-width: 1440px) {
     .restmenu-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 50px;
+        margin-bottom: 50px;
     }
     .restmenu-menu {
-        /* margin: 0 auto; */
         width: 1104px;
-        padding: 0;
     }   
     .restmenu-section {
         width: 515px;
@@ -50,14 +53,16 @@
 .restmenu-item {
     margin-bottom: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    list-style: unset;
 }
 .restmenu-item-cotainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
 }
-
+.item-list {
+    List-style: inside;
+    color: #D8D7D7
+}
 .restmenu-name {
     font-weight: 500;
     font-size: 14px;
@@ -65,7 +70,11 @@
     letter-spacing: -0.02em;
     color: var(--white-text-color);
 }
-
+.restmenu-name::before {
+    content: "• ";
+    margin: 5px;
+    color: white;
+}
 .restmenu-weight {
 font-weight: 400;
 font-size: 12px;
@@ -86,7 +95,7 @@ max-width: 200px;
 }
 @media screen and (min-width: 400px) {
     .restmenu-ingredients {
-        max-width: 345;
+        max-width: 345px;
     }
       
 }
@@ -99,4 +108,9 @@ max-width: 200px;
     padding-right: 0;
     padding-left: auto;
     color: var(--white-text-color);
+}
+@media screen and (min-width: 1440px) {
+    .desserts-menu {
+        margin-bottom: 26px;
+    }
 }
