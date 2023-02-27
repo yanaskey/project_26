@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 768px) {
   .luxe-hotel {
-    padding-top: 80px;
+    padding-top: 120px;
     position: relative;
   }
 
@@ -101,7 +101,7 @@
 }
 @media screen and (min-width: 1440px) {
   .luxe-hotel {
-    padding-top: 100px;
+    padding-top: 130px;
   }
 
   .luxe-hotel-container {
