@@ -41,6 +41,7 @@
 }
 .luxe-hotel-button-list {
   display: flex;
+  align-items: baseline;
   gap: 12px;
 }
 
