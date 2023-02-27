@@ -20,21 +20,7 @@
 .restmenu-menu {
     padding: 0;
 }
-@media screen and (min-width: 1440px) {
-    .restmenu-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 50px;
-        margin-bottom: 50px;
-    }
-    .restmenu-menu {
-        width: 1104px;
-    }   
-    .restmenu-section {
-        width: 515px;
-    }
-}
+
 
 .restmenu-title {
     font-style: italic;
@@ -93,13 +79,6 @@ letter-spacing: 0.18em;
 color: rgba(216, 215, 215, 0.5);
 max-width: 200px;
 }
-@media screen and (min-width: 400px) {
-    .restmenu-ingredients {
-        max-width: 345px;
-    }
-      
-}
-
 .restmenu-price {
     font-weight: 700;
     font-size: 14px;
@@ -109,8 +88,31 @@ max-width: 200px;
     padding-left: auto;
     color: var(--white-text-color);
 }
+@media screen and (min-width: 768px) {
+    .restmenu-menu {
+        width: 515px;
+    }
+    .restmenu-ingredients {
+        max-width: 345px;
+    }
+}
 @media screen and (min-width: 1440px) {
+    .restmenu-section {
+        width: 515px;
+    }
+    .restmenu-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+        column-gap: 74px;
+        margin-bottom: 50px;
+    }
+    .restmenu-menu {
+        width: 1104px;
+    }
     .desserts-menu {
         margin-bottom: 26px;
-    }
+    }   
+    
 }
