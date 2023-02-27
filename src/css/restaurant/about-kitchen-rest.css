@@ -1,5 +1,6 @@
 .about-kitchen {
   padding-top: 64px;
+  padding-bottom: 64px;
 }
 .about-kitchen-container {
   display: flex;
@@ -48,6 +49,7 @@
 @media screen and (min-width: 768px) {
   .about-kitchen {
     padding-top: 120px;
+    padding-bottom: 80px;
   }
 
   .about-kitchen-text-list {
@@ -63,6 +65,7 @@
 @media screen and (min-width: 1440px) {
   .about-kitchen {
     padding-top: 130px;
+    padding-bottom: 100px;
   }
 
   .about-kitchen-container {
