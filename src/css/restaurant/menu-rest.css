@@ -35,17 +35,16 @@
     color: var(--white-text-color);
 }
 
-.restmenu-list {
+/* .restmenu-list {
     list-style: none;
     padding: 0;
-}
+} */
 
 .restmenu-item {
     margin-bottom: 20px;
 }
 
 .restmenu-name {
-    margin-top: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(18/14);
