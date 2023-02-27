@@ -11,17 +11,26 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: var(--white-text-color);
+    margin-bottom: 36px;
 }
-
-.restmenu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 /* Стилі для розділу з гарячими стравами */
-.restmenu-section {
-    margin-right: 20px;
+/*  {
+} */
+@media screen and (min-width: 1440px) {
+    .restmenu-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .restmenu-menu {
+        /* margin: 0 auto; */
+        width: 1104px;
+        padding: 0;
+    }   
+    .restmenu-section {
+        width: 515px;
+    }
 }
 
 .restmenu-title {
@@ -33,26 +42,27 @@
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: var(--white-text-color);
+    margin-bottom: 32px;
 }
 
-/* .restmenu-list {
-    list-style: none;
-    padding: 0;
-} */
+
 
 .restmenu-item {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    list-style: unset;
+}
+.restmenu-item-cotainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .restmenu-name {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(18/14);
-        /* identical to box height, or 129% */
-    
     letter-spacing: -0.02em;
-    
     color: var(--white-text-color);
 }
 
@@ -60,10 +70,9 @@
 font-weight: 400;
 font-size: 12px;
 line-height: calc(14/12);
-/* identical to box height, or 117% */
-
 letter-spacing: -0.02em;
-
+padding-right: 0;
+padding-left: auto;
 color: #D8D7D7;
 }
 
@@ -71,28 +80,23 @@ color: #D8D7D7;
 font-weight: 400;
 font-size: 10px;
 line-height: calc(14/10);
-/* or 140% */
-
 letter-spacing: 0.18em;
-
 color: rgba(216, 215, 215, 0.5);
+max-width: 200px;
+}
+@media screen and (min-width: 400px) {
+    .restmenu-ingredients {
+        max-width: 345;
+    }
+      
 }
 
 .restmenu-price {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(18/14);
-    /* identical to box height, or 129% */
-
     letter-spacing: -0.02em;
-
+    padding-right: 0;
+    padding-left: auto;
     color: var(--white-text-color);
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 21;
-    flex-grow: 0;
-    z-index: 21; */
 }
