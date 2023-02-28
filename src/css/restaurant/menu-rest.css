@@ -59,7 +59,7 @@
 .restmenu-name::before {
     content: "• ";
     margin: 5px;
-    color: white;
+    color: var(--white-text-color);
 }
 .restmenu-weight {
 font-weight: 400;
@@ -67,7 +67,7 @@ font-size: 12px;
 line-height: calc(14/12);
 letter-spacing: -0.02em;
 padding-right: 0;
-color: #D8D7D7;
+color: rgba(216, 215, 215, 0.5);
 }
 
 .restmenu-ingredients {
