@@ -106,10 +106,12 @@ max-width: 200px;
     border: none;
 }
 .btn-right {
-    fill: var(--white-text-color);
+    fill: none;
+    stroke: var(--primary-white);
 }
 .btn-left {
-    fill: rgba(247, 247, 247, 0.3);
+    fill: none;
+    stroke: rgba(247, 247, 247, 0.3);
 }
 @media screen and (max-width: 1439px) {
     .dead-space {
