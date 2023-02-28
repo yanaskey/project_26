@@ -1,7 +1,5 @@
-/* Стили для подложки */
-
 .overlay {
-  /* Скрываем подложку  */
+  /* backdrop  */
   opacity: 0;
   visibility: hidden;
 
@@ -12,38 +10,37 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: 0.3s all;
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
-/* Стили для модальных окон */
+/* styles for MODAL WINDOW */
 
 .modal {
-  /* Скрываем окна  */
+  /* Hide the window */
   opacity: 0;
   visibility: hidden;
 
-  /*  Установаем ширину окна  */
+  /*  Set window width  */
   width: 100%;
   max-width: 335px;
   /* height: 528px; */
 
-  /*  Центрируем и задаем z-index */
+  /*  Centering and setting the z-index*/
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  z-index: 30; /* Should be higher than backdrop*/
 
-  /*  Побочные стили   */
+  /*  other style   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
   padding: 24px 24px 40px;
   border-radius: 2px;
   background-color: var(--black-text-color, #121212);
-  transition: 0.3s all;
+  transition: all var(--transition);
 }
 
-/* Стили для активных классов подложки и окна */
+/* Styles for the Active Surface and Window Classes */
 
 .modal.active,
 .overlay.active {
@@ -51,13 +48,13 @@
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
+/* Styles for the close button */
 
 .modal-btn-close {
   background-color: transparent;
   border: 0;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   top: 14px;
   right: 14px;
@@ -65,26 +62,9 @@
   cursor: pointer;
 }
 
-/* .modal__cross_2 {
-  width: 28px;
-  height: 28px;
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  fill: var(--white-text-color, #f7f7f7);
-  cursor: pointer;
-} */
-
-.modal-btn {
-  background-color: transparent;
-}
-
 .modal-btn-icon {
-  /* fill: var(--white-text-color, #f7f7f7); */
   stroke: var(--white-text-color, #f7f7f7);
-  stroke-width: 1.5px;
-  /* border: 1.5px solid #f7f7f7; */
-  /* fill: var(--white-text-color, #f7f7f7); */
+  /* stroke-width: 1.5px; */
 }
 
 /* ------------ FORM -------------- */
@@ -94,7 +74,18 @@
   font-size: 28px;
   line-height: 1.36;
   color: var(--white-text-color, #f7f7f7);
+  margin-bottom: 40px;
 }
+
+.modal-posttitle {
+  /* for modal window 3 */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.12;
+  color: var(--white-text-color, #f7f7f7);
+  margin-bottom: 24px;
+}
+
 .form-input-wrap {
   margin-bottom: 40px;
   display: flex;
@@ -107,7 +98,6 @@
   line-height: 1.5;
   letter-spacing: 0.18em;
   color: #d8d7d7;
-  margin-top: 8px;
   text-align: left;
   display: block;
 }
@@ -125,34 +115,109 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-
-  color: var(--white-text-color, #f7f7f7);
+  padding-bottom: 18px;
   background-color: transparent;
+  margin-bottom: 8px;
 }
+
+input[class='modal-input'] {
+  color: var(--white-text-color, #f7f7f7);
+}
+
+input[class='modal-input']:invalid {
+  color: rgba(256, 0, 0, 0.3);
+}
+
 .modal-input::placeholder {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  opacity: 1;
   color: var(--white-text-color, #f7f7f7);
 }
 
-option[value=''] {
-  display: none;
-  font-weight: 500;
+.modal-select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: white;
+  background-color: transparent;
+  background-image: url('../img/main/contacts-main/chevron-down.svg'),
+    linear-gradient(to bottom, #121212 0%, #121212 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0 top 0, 0 0;
+  background-size: 20px 20px, 100%;
+}
+
+select > option {
+  color: black;
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 48px;
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
   background-color: transparent;
   color: var(--white-text-color, #f7f7f7);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--white-text-color, #f7f7f7);
+  color: var(--black-text-color);
+}
+
+@media screen and (max-height: 512px) {
+  .modal {
+    max-height: 100%;
+    overflow: scroll;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
-    padding: 32px 32px 60;
+    padding: 32px 32px 60px;
     max-width: 628px;
-    height: 628px;
+  }
+
+  .modal-btn-close {
+    width: 32px;
+    height: 32px;
+    top: 24px;
+    right: 24px;
+  }
+
+  .modal-title {
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 60px;
+  }
+
+  .modal-posttitle {
+    margin-bottom: 32px;
+  }
+
+  .form-input-wrap {
+    margin-bottom: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 32px;
+  }
+
+  .form-input-wrap label {
+    width: 266px;
+  }
+
+  .form-input-wrap label[for='date1'] {
+    order: 1;
+  }
+
+  .modal-btn {
+    padding: 14px 133px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 }
