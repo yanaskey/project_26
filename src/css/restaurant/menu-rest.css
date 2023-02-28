@@ -89,9 +89,9 @@ max-width: 200px;
     padding-right: 0;
     color: var(--white-text-color);
 }
-    .desserts-menu {
-        margin-bottom: 32px;
-    }
+.desserts-menu {
+    margin-bottom: 32px;
+}
 .slider-container {
     width: 104px;
     margin: 0 auto;
@@ -104,7 +104,12 @@ max-width: 200px;
     height: 36px;
     background: none;
     border: none;
+}
+.btn-right {
     fill: var(--white-text-color);
+}
+.btn-left {
+    fill: rgba(247, 247, 247, 0.3);
 }
 @media screen and (max-width: 1439px) {
     .dead-space {
