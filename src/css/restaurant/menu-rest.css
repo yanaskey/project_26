@@ -19,6 +19,7 @@
 }
 .restmenu-menu {
     max-width: 335px;
+    margin: 0 auto;
 }
 .restmenu-section {
     text-transform: none;
@@ -113,6 +114,12 @@ max-width: 200px;
     fill: none;
     stroke: rgba(247, 247, 247, 0.3);
 }
+@media screen and (max-width: 767px) {
+    .restmenu-btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 1439px) {
     .dead-space {
         display: none;
@@ -179,7 +186,7 @@ max-width: 200px;
         margin-bottom: 50px;
     }
     .restmenu-menu {
-        width: 1168px;
+        width: 1104px;
     }
     .slider-container {
         display: none;
