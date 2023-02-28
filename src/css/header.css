@@ -296,7 +296,8 @@
     margin-right: 33px;
   }
 
-  .header-social-icon {
+  .header-social-icon,
+  .header-social-link {
     width: 24px;
     height: 24px;
   }
