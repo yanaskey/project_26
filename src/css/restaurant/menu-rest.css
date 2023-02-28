@@ -18,7 +18,7 @@
 }
 .restmenu-menu {
     padding: 0;
-    width: 335px;
+    max-width: 335px;
 }
 .restmenu-section {
     text-transform: none;
