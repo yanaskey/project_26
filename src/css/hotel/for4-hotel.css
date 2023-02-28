@@ -1,5 +1,6 @@
 .four-hotel {
   padding-top: 64px;
+  padding-bottom: 64px;
 }
 .four-hotel-container {
   display: flex;
@@ -63,6 +64,7 @@
 @media screen and (min-width: 768px) {
   .four-hotel {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .four-hotel-title {
@@ -90,6 +92,7 @@
 @media screen and (min-width: 1440px) {
   .four-hotel {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .four-hotel-container {
