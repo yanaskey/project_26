@@ -15,7 +15,7 @@
 }
 /* Стилі для розділу з гарячими стравами */
 .restmenu-container {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 .restmenu-menu {
     padding: 0;
@@ -89,15 +89,27 @@ max-width: 200px;
     padding-right: 0;
     color: var(--white-text-color);
 }
+    .desserts-menu {
+        margin-bottom: 32px;
+    }
 .slider-container {
     width: 104px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 .slider-button {
+    width: 36px;
+    height: 36px;
     background: none;
     border: none;
+    fill: var(--white-text-color);
+}
+@media screen and (max-width: 1439px) {
+    .dead-space {
+        display: none;
+    }
 }
 @media screen and (min-width: 768px) {
     .restmenu-menu {
@@ -153,7 +165,8 @@ max-width: 200px;
     .restmenu-menu {
         width: 1104px;
     }
-    .desserts-menu {
-        margin-bottom: 32px;
+    .slider-container {
+        display: none;
     }
+    
 }
