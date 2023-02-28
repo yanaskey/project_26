@@ -79,6 +79,10 @@
   justify-content: center;
 }
 
+.main-btn-details-link {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .section-main-rest {
     padding-top: 80px;
@@ -105,10 +109,7 @@
     width: 36px;
     height: 36px;
   }
-  .main-icon {
-    /* width: 36px;
-    height: 36px; */
-  }
+
   .main-img-list {
     gap: 32px;
     margin-bottom: 32px;
