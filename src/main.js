@@ -1,3 +1,3 @@
 import './modals';
 import './mob-tablet-menu';
-import '/itc-slider';
+import './itc-slider';
