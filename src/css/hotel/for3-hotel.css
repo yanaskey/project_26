@@ -9,7 +9,7 @@
 }
 .three-hotel-img-list {
   display: flex;
-  gap: 19px;
+  gap: 20px;
 }
 
 .three-hotel-text-container {
@@ -43,7 +43,9 @@
   align-items: baseline;
   gap: 12px;
 }
-
+.three-hotel-button-link {
+  display: block;
+}
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .three-hotel-container {
     gap: 32px;
@@ -57,15 +59,11 @@
   .three-pic-one {
     align-self: self-end;
   }
-
-  .three-hotel-button-wrap {
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
   .three-hotel {
-    padding-top: 120px;
+    padding-top: 80px;
     position: relative;
   }
 
@@ -98,7 +96,7 @@
 }
 @media screen and (min-width: 1440px) {
   .three-hotel {
-    padding-top: 130px;
+    padding-top: 100px;
   }
 
   .three-hotel-container {
