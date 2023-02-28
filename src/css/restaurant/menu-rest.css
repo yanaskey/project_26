@@ -2,7 +2,6 @@
     background-color: var(--black-text-color);
     padding: 40px 20px 64px;
 }
-
 .restaurant-menu {
     text-align: center;
     font-weight: 700;
@@ -23,7 +22,6 @@
 .restmenu-section {
     text-transform: none;
 }
-
 .restmenu-title {
     font-style: italic;
     font-weight: 700;
@@ -35,9 +33,6 @@
     color: var(--white-text-color);
     margin-bottom: 32px;
 }
-
-
-
 .restmenu-item {
     padding-bottom: 6px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
