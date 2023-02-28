@@ -12,7 +12,7 @@
 
 .header-main-section {
   background: var(--black-text-color);
-  /* border-bottom: 0.5px solid rgba(247, 247, 247, 0.2); */
+  border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
 }
 
 .header-container {
@@ -44,6 +44,7 @@
   margin-right: 83px;
   padding: 0;
   background: transparent;
+  position: absolute;
 }
 
 .menu-btn-icon {
@@ -62,9 +63,6 @@
 }
 
 .close-btn {
-  /* position: absolute;
-  top: 32px;
-  left: 27px; */
   position: absolute;
   border: none;
   padding: 0;
@@ -237,6 +235,18 @@
     height: 20px;
   }
 
+  /* .mobile-menu-icon {
+    height: 14px;
+    width: 21px;
+  } */
+
+  .mobile-menu-btn {
+    height: 28px;
+    width: 28px;
+    top: 25px;
+    left: 20px;
+  }
+
   .menu-btn-icon {
     height: 14px;
     width: 14px;
@@ -245,8 +255,8 @@
   .close-btn {
     height: 28px;
     width: 28px;
-    top: 32px;
-    left: 27px;
+    top: 25px;
+    left: 20px;
   }
 }
 
@@ -302,8 +312,8 @@
   .close-btn {
     height: 32px;
     width: 32px;
-    top: 31px;
-    left: 40px;
+    top: 23px;
+    left: 32px;
   }
 
   .logo {
