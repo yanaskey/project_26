@@ -20,7 +20,9 @@
 .restmenu-menu {
     padding: 0;
 }
-
+.restmenu-section {
+    text-transform: none;
+}
 
 .restmenu-title {
     font-style: italic;
@@ -37,12 +39,13 @@
 
 
 .restmenu-item {
-    margin-bottom: 14px;
+    padding: 1.5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .restmenu-item-cotainer {
     display: flex;
     justify-content: space-between;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 .item-list {
@@ -67,7 +70,7 @@ font-size: 12px;
 line-height: calc(14/12);
 letter-spacing: -0.02em;
 padding-right: 0;
-color: rgba(216, 215, 215, 0.5);
+color: #D8D7D7;
 }
 
 .restmenu-ingredients {
@@ -93,6 +96,34 @@ max-width: 200px;
     .restmenu-ingredients {
         max-width: 345px;
     }
+    .restaurant-menu {
+        font-size: 40px;
+        line-height: calc(44/40);
+    }
+    .restmenu-title {
+        font-size: 24px;
+        line-height: calc(24/24);
+    }   
+    .restmenu-name {
+        font-size: 18px;
+        line-height: calc(24/18);
+    }
+    .restmenu-weight {
+        font-size: 14px;
+        line-height: calc(18/14);
+    }
+    .restmenu-ingredients {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(18/12);
+        letter-spacing: 0.18em;
+    }
+    .restmenu-price {
+        font-size: 18px;
+        line-height: calc(24/18);
+    }
 }
 @media screen and (min-width: 1440px) {
     .restmenu-section {
@@ -110,7 +141,8 @@ max-width: 200px;
         width: 1104px;
     }
     .desserts-menu {
-        margin-bottom: 22px;
-    }   
-    
+        margin-bottom: 32px;
+    }
+    .restmenu-item-cotainer { 
+    }
 }
