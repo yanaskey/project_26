@@ -121,6 +121,7 @@ max-width: 200px;
 @media screen and (min-width: 768px) {
     .restmenu-menu {
         width: 515px;
+        max-width: 100%;
     }
     .restmenu-ingredients {
         max-width: 345px;
