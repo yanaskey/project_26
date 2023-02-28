@@ -1,15 +1,60 @@
 .amenities-section {
-    background-color:var(--primary-black);
+  padding-top: 40px;
+  padding-bottom: 68px;
+  background-color: var(--primary-black);
 }
 
 .amenities-title {
-    color: var(--white-text-color);
+  color: var(--white-text-color);
 }
 
 .amenities-list {
-    list-style: inside;
+  list-style: inside;
+  margin-bottom: 40px;
+}
+
+.amenities-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-left: -20px;
+  margin-bottom: 28px;
 }
 
 .amenities-list-item {
-    color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #f7f7f7;
+  color: var(--white-text-color);
+}
+
+
+.amenities-picture-position {
+    display: block;
+    margin-left: auto;
+}
+
+
+.amenities-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
 }
