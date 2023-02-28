@@ -1,0 +1,135 @@
+.section-details-hotel {
+  padding-top: 64px;
+  background-color: var(--black-text-color);
+}
+.container-details-hotel {
+  position: relative;
+}
+.section-title-details-hotel {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 32px;
+}
+
+.details-hotel-subtitle-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14) px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-bottom: 33px;
+}
+
+/* Foto */
+.details-big-foto {
+  margin-bottom: 27px;
+}
+.details-hotel-img-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+/* Icon  */
+
+.details-hotel-icon-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.details-hotel-icon-btn {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.3);
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  padding-top: 0;
+}
+.details-hotel-icon-btn-r {
+  stroke: var(--white-line-color);
+  fill: transparent;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+
+  padding-top: 0;
+}
+
+.details-hotel-icon-btn:hover,
+.details-hotel-icon-btn:focus {
+  stroke: var(--white-line-color);
+}
+
+/* Button */
+
+.details-hotel-btn-list {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.details-hotel-button-link {
+  display: block;
+}
+/* Media */
+@media screen and (max-width: 767px) {
+  .details-hotel-desk {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-details-hotel {
+    padding-top: 80px;
+  }
+  .details-hotel-main {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .section-title-details-hotel {
+    margin-bottom: 0;
+  }
+  .details-hotel-subtitle-text {
+    margin: 0;
+  }
+  .details-hotel-icon-list {
+    display: none;
+  }
+  .details-hotel-btn-list {
+    gap: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-details-hotel {
+    padding-top: 100px;
+  }
+  .details-hotel-icon-list {
+    display: none;
+  }
+  .details-hotel-btn-list {
+    position: absolute;
+    /* right: 100px; */
+    left: 1047px;
+    top: 150px;
+    left: 1047px;
+    gap: 14px;
+  }
+  .details-hotel-main {
+    margin-bottom: 87px;
+  }
+}
