@@ -9,7 +9,7 @@
 }
 .luxe-hotel-img-list {
   display: flex;
-  gap: 19px;
+  gap: 20px;
 }
 
 .luxe-hotel-text-container {
@@ -44,7 +44,9 @@
   align-items: baseline;
   gap: 12px;
 }
-
+.luxe-hotel-button-link {
+  display: block;
+}
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .luxe-hotel-container {
     flex-direction: row-reverse;
@@ -62,7 +64,7 @@
   .luxe-pic-two {
     justify-self: right;
   }
-  .luxe-hotel-button-wrap {
+  .luxe-hotel-button-list {
     margin-left: auto;
   }
 }
