@@ -39,14 +39,18 @@
 
 
 .restmenu-item {
-    padding: 1.5px 0;
+    padding-bottom: 6px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 14px;
+}
+.restmenu-item:last-child {
+    margin-bottom: 0px;
+
 }
 .restmenu-item-cotainer {
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 .item-list {
     List-style: inside;
@@ -90,7 +94,7 @@ max-width: 200px;
     color: var(--white-text-color);
 }
 .desserts-menu {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 .slider-container {
     width: 104px;
