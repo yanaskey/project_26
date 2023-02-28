@@ -1,7 +1,6 @@
 @media screen and (min-width:320px) {
     .hero-room{
         background-color:  #F6F6F6;
-        padding-left: 20px;
         padding-top: 40px;
     }
     .hero-title-room{
@@ -11,7 +10,6 @@
         letter-spacing: -0.02em;
         text-transform: uppercase;
         color: #121212;
-        padding-top: 40px;
         margin-bottom: 24px;
     }
     .hero-text-room{
@@ -22,8 +20,7 @@
         text-transform: uppercase;
         color: #121212;
         margin-top: 51px;
-        width: 338px;
-        padding-bottom: 64px;
+        max-width: 338px;
          
   }
     .hero-btn-room{
@@ -46,6 +43,12 @@
     .hero-btn-item-room{
       margin-bottom: 40px;
    }
+   .room-slider-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 24px;
+  }
    
    
    
@@ -78,9 +81,6 @@
   
   
   .itc-slider__btn {
-    position: relative;
-    right: -251px;
-    top: 24px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -99,10 +99,9 @@
     stroke: rgba(18, 18, 18, 0.3);
     ;
   }
- 
-  
- 
 }
+
+
 
 @media screen and (min-width: 768px){
     .hero-title-room{
@@ -113,7 +112,7 @@
         padding: 8px 24px;
     }
     .hero-text-room{
-        margin-top: 0px;
+        margin-top: 40px;
         padding-bottom: 0;
     }
     .hero-btn-list-room{
@@ -125,10 +124,10 @@
     .itc-slider__items{
         margin-right: 100px;
     }
-    .itc-slider__btn{
-        right: -590px;
-        top: 40px;
-    }
+    .room-slider-wrap{
+        position: absolute;
+        left: 622px;
+      }
 }
 
 
@@ -147,23 +146,20 @@
     }
     .hero-wrap-room{
         flex-direction: row;
+        justify-content: space-between;
     }
     .hero-text-room{
         position: absolute;
         top: 572px;
+        margin-top: 0px;
     }
-    .desc-wrapper-room{
-        margin-right: 112px;
-    }
+   
     .itc-slider{
-        padding-top: 30px;
         padding-bottom: 82px;
         
     }
-    
-    .itc-slider__btn{
-        right: -5px;
-        top: 16px;
-    }
+    .room-slider-wrap{
+        left: 0px;
+      }
 
     }
