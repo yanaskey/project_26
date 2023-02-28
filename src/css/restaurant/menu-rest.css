@@ -51,7 +51,7 @@
 }
 .item-list {
     List-style: inside;
-    color: rgba(216, 215, 215, 1)
+    color: rgba(216, 215, 215, 1);
 }
 .restmenu-name {
     font-weight: 500;
@@ -71,7 +71,7 @@ font-size: 12px;
 line-height: calc(14/12);
 letter-spacing: -0.02em;
 padding-right: 0;
-color: #D8D7D7;
+color: rgba(216, 215, 215, 1)
 }
 
 .restmenu-ingredients {
