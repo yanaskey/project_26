@@ -52,7 +52,7 @@
    
    
    
-.itc-slider {
+/* .itc-slider {
     position: relative;
     max-width: 345px;
   }
@@ -98,7 +98,7 @@
     fill: none;
     stroke: rgba(18, 18, 18, 0.3);
     ;
-  }
+  } */
 }
 
 
@@ -118,7 +118,7 @@
     .hero-btn-list-room{
         margin-bottom: 54px;
     }
-    .itc-slider{
+    /* .itc-slider{
         max-width: 720px;
     }
     .itc-slider__items{
@@ -127,7 +127,7 @@
     .room-slider-wrap{
         position: absolute;
         left: 622px;
-      }
+      } */
 }
 
 
@@ -154,12 +154,12 @@
         margin-top: 0px;
     }
    
-    .itc-slider{
+    /* .itc-slider{
         padding-bottom: 82px;
         
     }
     .room-slider-wrap{
         left: 0px;
-      }
+      } */
 
     }
