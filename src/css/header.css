@@ -37,6 +37,7 @@
   background-color: var(--black-text-color);
   overflow: scroll;
   transform: translateX(100%);
+  z-index: 999;
 }
 
 .mobile-menu.is-open {
@@ -151,7 +152,7 @@
 }
 
 .header-main-section .logo,
-.menu-header .logo {
+.menu-header-container .logo {
   color: var(--white-line-color);
 }
 
@@ -165,7 +166,7 @@
 }
 
 .header-main-section .logo-text,
-.menu-header .logo-text {
+.menu-header-container .logo-text {
   color: var(--white-line-color);
 }
 
@@ -339,7 +340,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .header-responsive-container {
+  .header-main-section .header-responsive-container {
     display: flex;
     position: absolute;
     background: transparent;
@@ -350,7 +351,7 @@
     border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
   }
 
-  .header-container {
+  .header-main-section .header-container {
     position: absolute;
     left: 0px;
     right: 0px;
