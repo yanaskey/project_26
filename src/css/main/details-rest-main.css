@@ -152,7 +152,7 @@
 
   .main-icon-list {
     justify-content: center;
-    margin-bottom: 26px;
+    margin-bottom: 0;
     gap: 32px;
   }
   .main-icon-btn {
