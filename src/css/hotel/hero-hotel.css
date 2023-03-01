@@ -1,0 +1,106 @@
+@media screen and (min-width:320px) {
+    .hero-hotel{
+        background-color:  #F6F6F6;
+        padding-top: 40px;
+    }
+    .hero-title-hotel{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #121212;
+        margin-bottom: 24px;
+    }
+    .hero-text-hotel{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #121212;
+        margin-top: 51px;
+        max-width: 338px;
+         
+  }
+  /* .hotel-slider-wrap{
+    display: flex;
+    margin-top: 24px;
+    justify-content: end;
+
+  } */
+    .hero-btn-hotel{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #121212;
+        border: 0.8px solid #121212;
+        border-radius: 32px;
+        background-color: transparent;
+        padding: 8px 18px;
+       
+    }
+    .hero-wrap-hotel{
+      display: flex;
+      flex-direction: column; 
+    }
+    .hero-btn-list-hotel{
+      display: flex;
+      gap: 10px; 
+      margin-bottom: 40px;
+   }
+   
+
+}
+
+@media screen and (max-width:320px) {
+  .hero-btn-list-hotel{
+    gap: 9px; 
+ }
+}
+
+@media screen and (min-width: 768px){
+    .hero-title-hotel{
+        font-size: 80px;
+        margin-bottom: 32px;
+    }
+    .hero-btn-hotel{
+        padding: 8px 24px;
+    }
+    .hero-text-hotel{
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+    .hero-btn-list-hotel{
+        margin-bottom: 54px;
+    }
+    
+}
+
+
+@media screen and (min-width:1440px){
+    .hero-title-hotel{
+        font-size: 80px;
+        padding-top: 204px;
+    }
+    .hero-btn-hotel{
+        font-size: 18px;
+        line-height: 1.33;
+    }
+    .hero-btn-list-hotel{
+        margin-bottom: 204px;
+        max-width: 350px;
+    }
+    .hero-wrap-hotel{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero-text-hotel{
+      position: absolute;
+      top: 572px;
+      margin-top: 40px;
+      padding-bottom: 0;
+  }
+    }
