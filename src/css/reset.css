@@ -109,7 +109,7 @@ body {
   border-radius: 32px;
   background-color: transparent;
   padding: 8px 18px;
-  transition: background-color var(--transition);
+  /* transition: background-color var(--transition); */
 }
 
 /*---------- for h2 ----------*/
@@ -155,13 +155,13 @@ body {
 .button.black {
   color: var(--black-text-color);
   border-color: var(--black-text-color);
-  transition: color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .button.white {
   color: var(--white-text-color);
   border-color: var(--white-text-color);
-  transition: color var(--transition);
+  transition: color var(--transition), background-color var(--transition);
 }
 
 .button.black:focus,
