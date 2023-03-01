@@ -10,10 +10,9 @@
 }
 
 .location-map-img {
-  mix-blend-mode: luminosity;
   box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
   margin-bottom: 32px;
-  position: relative;
+  /* position: relative; */
 }
 
 .location-address-tel {
@@ -72,6 +71,15 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  .location-wrap {
+    position: relative;
+  }
+
+  .location-header.section-title {
+    margin-bottom: 0px;
+  }
+
   .header-img-wrap {
     display: flex;
     gap: 32px;
@@ -87,8 +95,8 @@
     align-items: flex-end;
     justify-content: flex-start;
     gap: 70px;
-    position: relative;
-    top: -57px;
+    position: absolute;
+    bottom: 5px;
     left: 672px;
   }
 
