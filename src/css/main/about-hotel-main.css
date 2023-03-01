@@ -1,5 +1,6 @@
 .section-about-hotel-main {
   padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .section-title-about-hotel {
@@ -40,6 +41,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-about-hotel-main {
+    padding-bottom: 80px;
+  }
   .section-title-about-hotel {
     width: 434px;
     height: 120px;
@@ -66,10 +70,10 @@
 @media screen and (min-width: 1440px) {
   .section-about-hotel-main {
     padding-top: 126px;
+    padding-top: 100px;
   }
   .section-title-about-hotel {
     margin-bottom: 338px;
-    
   }
   .text {
     float: right;
