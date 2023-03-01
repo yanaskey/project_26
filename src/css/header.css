@@ -152,7 +152,7 @@
 }
 
 .header-main-section .logo,
-.menu-header .logo {
+.menu-header-container .logo {
   color: var(--white-line-color);
 }
 
@@ -166,7 +166,7 @@
 }
 
 .header-main-section .logo-text,
-.menu-header .logo-text {
+.menu-header-container .logo-text {
   color: var(--white-line-color);
 }
 
