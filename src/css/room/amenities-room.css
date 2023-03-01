@@ -1,0 +1,165 @@
+.amenities-section {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    background-color: var(--black-text-color);
+}
+
+.amenities-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+  color: var(--white-text-color);
+}
+
+.amenities-list {
+  list-style: outside;
+  margin-bottom: 40px;
+  margin-left: 24px;
+}
+
+.amenities-list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #f7f7f7;
+  color: var(--white-text-color);
+}
+
+.amenities-list-item:nth-last-child {
+    margin-bottom: 0;
+}
+
+.main-amenities-picture-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 32px;
+    margin-top: 64px;
+}
+
+.extra-amenities-picture-wrap {
+    position: relative;
+}
+
+.additional-amenities-picture-wrap {
+    position: absolute; 
+    bottom: 85px;
+    left: -80px;
+}
+
+.amenities-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* _______________TABLET______________ */
+
+
+@media screen and (min-width: 768px) {
+
+    .amenities-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--black-text-color);
+    }
+
+
+    .amenities-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    }
+
+    .amenities-list {
+    margin-left: 32px;
+    }
+
+    .amenities-list-item {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    }
+    
+
+    .main-amenities-picture-wrap {
+    margin-top: 122px;
+    margin-bottom: 0;
+    }
+
+    .additional-amenities-picture-wrap {
+    bottom: 186px;
+    left: -295px;
+    }
+    
+
+    .button-wrap {
+        position: relative;
+    }
+
+    .amenities-btn {
+        padding-left: 24px;
+        padding-right: 24px;
+        position: absolute;
+        top: -154px;
+    }
+
+}
+
+/* ____________DESKTOP___________ */
+
+
+@media screen and (min-width: 1440px) {
+
+.amenities-section {
+    padding-top: 94px;
+    padding-bottom: 100px;
+}
+
+    .main-desktop-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 70px;
+    }
+
+    .desktop-list-wrapper:nth-child(3) {
+    margin-right: 162px; 
+    }
+
+    .main-amenities-picture-wrap {
+    height: 420px;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+    .extra-amenities-picture-wrap {
+    position: relative;
+    bottom: 218px;
+    }
+
+    .additional-amenities-picture-wrap {
+    bottom: 0;
+    left: -350px;
+}
+
+.amenities-btn {
+    position: absolute;
+    top: -186px;
+    left: 530px;
+}
+
+
+
+
+}
