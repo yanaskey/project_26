@@ -25,7 +25,7 @@
 }
 
 /* Foto */
-.picture-mob {
+.picture {
   margin-bottom: 27px;
 }
 .details-hotel-img-list {
@@ -123,13 +123,15 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
   /* .details-big-foto {
     margin: 0px;
   } */
   .picture {
     position: absolute;
-    left: 480px;
+    left: 140px;
+    bottom: 20px;
     margin: 0;
   }
   .details-hotel-desk {
@@ -166,11 +168,13 @@
     margin-bottom: 60px;
   }
   .details-big-foto {
+    width: 420px;
     margin: 0px;
   }
-  .foto {
+  .picture {
     position: absolute;
     left: 480px;
+    bottom: 0;
   }
   .details-hotel-desk {
     display: flex;
@@ -189,7 +193,6 @@
   }
   .details-hotel-btn-list {
     position: absolute;
-    /* right: 100px; */
     left: 1047px;
     top: 3px;
     left: 1047px;
