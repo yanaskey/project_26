@@ -1,5 +1,6 @@
 .section-details-hotel {
-  padding-top: 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--black-text-color);
 }
 .container-details-hotel {
@@ -17,7 +18,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(18 / 14) px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--white-text-color);
@@ -25,13 +26,16 @@
 }
 
 /* Foto */
-.picture {
-  margin-bottom: 27px;
+.foto-detail-hotel-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+  margin-bottom: 18px;
 }
+
 .details-hotel-img-list {
   display: flex;
   gap: 20px;
-  margin-bottom: 18px;
 }
 
 /*  */
@@ -80,7 +84,6 @@
   gap: 12px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
 }
 
 .details-hotel-button-link {
@@ -104,7 +107,8 @@
 
 @media screen and (min-width: 768px) {
   .section-details-hotel {
-    padding-top: 80px;
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
   .details-hotel-main {
     display: flex;
@@ -121,19 +125,16 @@
 
   .foto-detail-hotel-main {
     position: relative;
-    display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
   }
-  /* .details-big-foto {
-    margin: 0px;
-  } */
-  .picture {
+
+  .picture-m {
     position: absolute;
-    left: 140px;
-    bottom: 20px;
-    margin: 0;
+    left: 192px;
+    top: 0;
   }
+
   .details-hotel-desk {
     display: flex;
     flex-direction: column;
@@ -157,7 +158,8 @@
 
 @media screen and (min-width: 1440px) {
   .section-details-hotel {
-    padding-top: 100px;
+    padding-top: 44px;
+    padding-bottom: 60px;
   }
   .details-hotel-subtitle-text {
     width: 362px;
@@ -165,27 +167,28 @@
     margin: 0;
   }
   .foto-detail-hotel-main {
-    margin-bottom: 60px;
+    margin-bottom: 0;
+    margin-right: 126px;
+    margin-left: 126px;
   }
   .details-big-foto {
     width: 420px;
     margin: 0px;
   }
-  .picture {
-    position: absolute;
-    left: 480px;
-    bottom: 0;
+  .picture-m {
+    left: 352px;
+    top: 0;
   }
   .details-hotel-desk {
     display: flex;
     flex-direction: column;
-    row-gap: 32px;
+    gap: 28px;
   }
   .details-hotel-img-list {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
-    row-gap: 32px;
+    gap: 28px;
   }
 
   .details-hotel-icon-list {
