@@ -37,6 +37,7 @@
   background-color: var(--black-text-color);
   overflow: scroll;
   transform: translateX(100%);
+  z-index: 999;
 }
 
 .mobile-menu.is-open {
