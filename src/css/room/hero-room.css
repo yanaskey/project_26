@@ -2,6 +2,7 @@
   .hero-room {
     background-color: #f6f6f6;
     padding-top: 40px;
+    padding-bottom: 64px;
   }
   .hero-title-room {
     font-weight: 400;
@@ -95,6 +96,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-room{
+    padding-bottom: 120px;
+  }
   .hero-title-room {
     font-size: 80px;
     margin-bottom: 32px;
@@ -122,6 +126,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero-room{
+    padding-bottom: 0px;
+    padding-top: 30px;
+  }
   .hero-title-room {
     font-size: 80px;
     padding-top: 204px;
