@@ -14,7 +14,6 @@
     display: flex;
     transition: transform 0.5s ease;
     will-change: transform;
-    gap: 20px;
   }
   
   .itc-slider__transition-none {
@@ -26,7 +25,6 @@
     max-width: 100%;
     user-select: none;
     will-change: transform;
-    margin-right: -20px;
   }
   
   
@@ -55,15 +53,17 @@
     .itc-slider{
         max-width: 720px;
     }
-    .itc-slider__items{
-        margin-right: 100px;
-    }
+    /* .itc-slider__items{
+        margin-right: 140px;
+        gap: 30px;
+    } */
     .section-slider-wrap{
       display: flex;
       margin-top: 24px;
       position: absolute;
       left: 622px;
     }
+    
 }
 
 @media screen and (min-width:1440px){
@@ -74,4 +74,9 @@
     .section-slider-wrap{
       left: 0px;
     }
+    .itc-slider__items {
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+}
 }
