@@ -1,54 +1,54 @@
-@media screen and (min-width:320px) {
-    .hero-rest{
-        background-color:  #F6F6F6;
-        padding-top: 40px;
-    }
-    .hero-title-rest{
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 1;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: #121212;
-        margin-bottom: 24px;
-    }
-    .hero-text-rest{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: #121212;
-        margin-top: 51px;
-        max-width: 338px;
-         
+@media screen and (min-width: 320px) {
+  .hero-rest {
+    background-color: #f6f6f6;
+    padding-top: 40px;
   }
-    .hero-btn-rest{
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.28;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: #121212;
-        border: 0.8px solid #121212;
-        border-radius: 32px;
-        background-color: transparent;
-        padding: 8px 18px;
-       
-    }
-    .hero-wrap-rest{
-      display: flex;
-      flex-direction: column; 
-    }
-    .hero-btn-list-rest{
-      display: flex;
-      gap: 10px; 
-      margin-bottom: 40px;
-   }
-   
-   
-   
-/* .itc-slider {
+  .hero-title-rest {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #121212;
+    margin-bottom: 24px;
+  }
+  .hero-text-rest {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #121212;
+    margin-top: 51px;
+    max-width: 338px;
+  }
+  .hero-btn-rest {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #121212;
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+    background-color: transparent;
+    padding: 8px 18px;
+  }
+  .hero-wrap-rest {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-btn-list-rest {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .hero-btn-item-rest > a {
+    display: block;
+  }
+
+  /* .itc-slider {
     position: relative;
     max-width: 345px;
   }
@@ -103,28 +103,28 @@
   } */
 }
 
-@media screen and (max-width:320px) {
-    .hero-btn-list-rest{
-      gap: 6px; 
-   }
+@media screen and (max-width: 320px) {
+  .hero-btn-list-rest {
+    gap: 6px;
   }
+}
 
-@media screen and (min-width: 768px){
-    .hero-title-rest{
-        font-size: 80px;
-        margin-bottom: 32px;
-    }
-    .hero-btn-rest{
-        padding: 8px 24px;
-    }
-    .hero-text-rest{
-        margin-top: 40px;
-        padding-bottom: 0;
-    }
-    .hero-btn-list-rest{
-        margin-bottom: 54px;
-    }
-    /* .itc-slider{
+@media screen and (min-width: 768px) {
+  .hero-title-rest {
+    font-size: 80px;
+    margin-bottom: 32px;
+  }
+  .hero-btn-rest {
+    padding: 8px 24px;
+  }
+  .hero-text-rest {
+    margin-top: 40px;
+    padding-bottom: 0;
+  }
+  .hero-btn-list-rest {
+    margin-bottom: 54px;
+  }
+  /* .itc-slider{
         max-width: 720px;
     }
     .itc-slider__items{
@@ -138,38 +138,35 @@
       } */
 }
 
+@media screen and (min-width: 1440px) {
+  .hero-title-rest {
+    font-size: 80px;
+    padding-top: 204px;
+  }
+  .hero-btn-rest {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .hero-btn-list-rest {
+    margin-bottom: 204px;
+    width: 350px;
+  }
+  .hero-wrap-rest {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-text-rest {
+    position: absolute;
+    top: 572px;
+    margin-top: 40px;
+    padding-bottom: 0;
+  }
 
-@media screen and (min-width:1440px){
-    .hero-title-rest{
-        font-size: 80px;
-        padding-top: 204px;
-    }
-    .hero-btn-rest{
-        font-size: 18px;
-        line-height: 1.33;
-    }
-    .hero-btn-list-rest{
-        margin-bottom: 204px;
-        width: 350px;
-    }
-    .hero-wrap-rest{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .hero-text-rest{
-        position: absolute;
-        top: 572px;
-        margin-top: 40px;
-        padding-bottom: 0;
-    }
-   
-    /* .itc-slider{
+  /* .itc-slider{
         padding-bottom: 82px;
         
     }
     .rest-slider-wrap{
         left: 0px;
       } */
-    
-
-    }
+}
