@@ -120,6 +120,10 @@
   margin-bottom: 8px;
 }
 
+.modal-input:focus {
+  border-bottom: 3px solid rgba(246, 246, 246, 0.7);
+}
+
 input[class='modal-input'] {
   color: var(--white-text-color, #f7f7f7);
 }
